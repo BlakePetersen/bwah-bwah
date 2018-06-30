@@ -7,5 +7,6 @@ injectGlobal`
   html, body {
     background-color: #e6e9eb;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
 `;

@@ -1,5 +1,5 @@
 // Logic Deps
-import initReactFastClick from 'react-fastclick';
+// import initReactFastClick from 'react-fastclick';
 import { Bwah } from '../lib/bwah'
 
 // Template Deps
@@ -152,7 +152,7 @@ const By = styled.div`
   }
 `;
 
-initReactFastClick();
+// initReactFastClick();
 
 export default () => (
   <Page>
