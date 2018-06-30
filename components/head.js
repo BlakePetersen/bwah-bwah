@@ -10,7 +10,7 @@ const Head = props => (
     <meta charset="UTF-8" />
     <title>{props.title || ''}</title>
     <meta name="description" content={props.description || defaultDescription} />
-    <meta name="viewport" content={'width=device-width'} />
+    <meta name="viewport" content={'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'} />
     <link href="https://fonts.googleapis.com/css?family=Anton|Hind|Pacifico" rel="stylesheet" />
     <link rel="icon" href="/static/favicon.ico" />
     <meta property="og:url" content={props.url || defaultOGURL} />
