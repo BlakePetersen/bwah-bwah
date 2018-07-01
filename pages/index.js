@@ -48,14 +48,29 @@ const Title = styled.h1`
     display: inline;
     line-height: 0;
   }
+  
+  @media (max-width: 800px) {
+    font-size: calc(5rem *.8);
+    
+    &:after {
+      font-size: calc(10.75rem *.8);
+      top: calc(-.25rem * .8);
+    }
+  }
 `;
 
 const Description = styled.h2`
   margin-top: 0;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  //font-family: 'Pacifico', cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: 'Abel', cursive;
+  @media (max-width: 800px) {
+    font-size: calc(1.25rem *.8);
+  }
 `;
 
 const Button = styled.button`    
@@ -65,7 +80,7 @@ const Button = styled.button`
       min-width: ${_pushSize}px;
       min-height: ${_pushSize}px;
       border: 0;
-      margin: 1em;
+      margin: 1rem 1rem 5rem;
       outline: none;
       background-color: ${_pushColor};
       border-radius: 50%;
@@ -126,7 +141,7 @@ const Button = styled.button`
 const By = styled.div`
   position: absolute;
   align-self: center;
-  bottom: 5px;
+  top: calc(100vh - 50px);
   text-align: center;
   color: #ccc;
   font-size: .7rem;
