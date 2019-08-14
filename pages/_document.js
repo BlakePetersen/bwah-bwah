@@ -1,8 +1,8 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-import Analytics from '../components/head/analytics'
-
 import { ServerStyleSheet } from 'styled-components'
 import './../styles/global-styles';
+
+import Analytics from '../components/head/analytics'
 
 export default class SiteDocument extends Document {
 	render () {
@@ -11,19 +11,23 @@ export default class SiteDocument extends Document {
 		const styleTags = sheet.getStyleElement();
 
 		return (
-			<html>
+			<html lang={`en`}>
 			<Head>
+				{/* Meta */}
+				{/* Favicon */}
+				{/* OpenGraph */}
+				{/* Twitter */}
+				{/* PWA */}
+				{/* Fonts */}
+				{ styleTags }
 				<Analytics />
-				{styleTags}
 			</Head>
 
 			<body>
-			<div className="root">
-				{main}
-			</div>
-
+			{ main }
 			<NextScript />
 			</body>
+
 			</html>
 		)
 	}

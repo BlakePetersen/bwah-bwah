@@ -1,5 +1,4 @@
 import NextHead from 'next/head'
-import { string } from 'prop-types'
 
 const defaultDescription = 'Airhorn sound button to help you announce "Hey, that\'s lit!"',
   defaultOGURL = '',
@@ -24,12 +23,5 @@ const Head = props => (
     <meta property="og:image:height" content="630" />
   </NextHead>
 );
-
-Head.propTypes = {
-  title: string,
-  description: string,
-  url: string,
-  ogImage: string
-};
 
 export default Head

@@ -1,7 +1,7 @@
 import styledNormalize from 'styled-normalize'
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
   ${styledNormalize}
   
   html, body {
@@ -9,3 +9,5 @@ injectGlobal`
     -webkit-tap-highlight-color: transparent;
   }
 `;
+
+export default GlobalStyles

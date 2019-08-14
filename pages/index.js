@@ -16,7 +16,7 @@ import { darken, lighten, transparentize } from 'polished';
 const _pushColor = 'hsla(10, 90%, 40%, 1)';
 const _pushSize = 200;
 
-const Container = styled.div`
+const Section = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,17 +169,20 @@ const By = styled.div`
   }
 `;
 
-export default () => (
+const BwahBwah = () => <>
   <Page>
     <Head title="BWAH BWAH!!" />
-    <Container>
+    <Section>
       <Hero>
         <Title>BWAH<br />BWAH</Title>
         <Description>Use when 🔥 breaks out</Description>
-        <Button onTouchTap={ Bwah } onClick={ Bwah } />
+        <Button onClick={ Bwah } />
       </Hero>
 
       <By>&lt;/&gt; by <a href={'https://twitter.com/Blake_Petersen'}>ʙ ʟ ▲ ĸ ᴇ</a></By>
-    </Container>
+    </Section>
   </Page>
-)
+</>;
+
+
+export default BwahBwah;
