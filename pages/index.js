@@ -74,7 +74,6 @@ const Description = styled.h2`
 `;
 
 const Button = styled.button`    
-      touch-action: none;
       position: relative;
       display: inline-block;
       min-width: ${_pushSize}px;
