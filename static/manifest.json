@@ -1,0 +1,9 @@
+{
+  "name": "Bwah Bwah by Blake Petersen",
+  "short_name": "Bwah Bwah",
+  "background_color": "#111111",
+  "description": "Annoy the whole wide world",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000"
+}
