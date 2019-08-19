@@ -142,7 +142,7 @@ const By = styled.div`
   align-self: center;
   top: calc(100vh - 50px);
   text-align: center;
-  color: #ccc;
+  color: #333;
   font-size: .7rem;
   line-height: 1.45;
   
@@ -159,7 +159,7 @@ const By = styled.div`
     text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
     transition: text-shadow 200ms ease-out, transform 200ms ease-out;
     font-size: 1rem;
-    color: #ababab;
+    color: #333;
 
     &:hover { 
       transform: translateY(-4px);
@@ -175,10 +175,10 @@ const BwahBwah = () => <>
       <Hero>
         <Title>BWAH<br />BWAH</Title>
         <Description>Use when 🔥 breaks out</Description>
-        <Button onClick={ Bwah } />
+        <Button title="Bwah Bwah Button" onClick={ Bwah } />
       </Hero>
 
-      <By>&lt;/&gt; by <a href={'https://twitter.com/Blake_Petersen'}>ʙ ʟ ▲ ĸ ᴇ</a></By>
+      <By>&lt;/&gt; by <a href={'https://twitter.com/Blake_Petersen'}>ʙ ʟ Λ ĸ ᴇ</a></By>
     </Section>
   </Page>
 </>;
